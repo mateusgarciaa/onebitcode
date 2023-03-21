@@ -1,42 +1,71 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .header {
-    display: flex;
-    background-color: black;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .icon {
-    width: 40px;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.icon {
+  width: 40px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+button {
+  color: aliceblue;
+  background-color: black;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  width: 65px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid red;
+  transition: 2s;
+}
+
+@media screen and (max-width: 767px) {
   
   .logo {
-    width: 200px;
+    width: 150px;
   }
-  
+
+  .icon {
+    width: 30px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
   .buttons {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
   }
-  
+
   button {
-    color: aliceblue;
-    background-color: black;
-    border: 2px solid aliceblue;
-    border-radius: 5px;
-    width: 65px;
-    font-size: 15px;
-    cursor: pointer;
+    width: 50px;
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px;
   }
-  
-  button:hover {
-    border: 2px solid red;
-    transition: 2s;
-  }
-  
+}
